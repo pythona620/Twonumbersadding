@@ -1,2 +1,2 @@
-call {number}
-call the phone number {number}
+call {number}.
+call the phone number {number}.
