@@ -34,7 +34,7 @@ class PythonaSkill(MycroftSkill):
 #        It is triggered using a list of sample phrases."""
 #        self.speak_dialog("how.are.you")
 
-    @intent_handler(IntentBuilder('numberKeyword').require('numberKeyword'))
+    @intent_handler(IntentBuilder('number').require('numberKeyword'))
     def handle_hello_world_intent(self, message):
         """ Skills can log useful information. These will appear in the CLI and
         the skills.log file."""
