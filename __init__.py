@@ -22,7 +22,7 @@ class NumberAddingSkill(MycroftSkill):
 			except:
 				self.speak_dialog("input.error")
 
-	@intent_handler(IntentBuilder("").require("NumberGuess").optionally("Play").optionally("Suggest"))
+	@intent_handler(IntentBuilder("").require("Adding").optionally("Play").optionally("Suggest"))
 	def handle_start_game_intent(self, message):
 		self.speak_dialog("start.game")
 
