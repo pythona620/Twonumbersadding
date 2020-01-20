@@ -26,11 +26,11 @@ class NumberAddingSkill(MycroftSkill):
 	def handle_start_game_intent(self, message):
 		self.speak_dialog("start.game")
 
-		# get frist_no
+		# get first_no
 		frist_no = self.get_numerical_response("get.first")
 		# get second_no
 		second_no = self.get_numerical_response("get.second")
-		answer = (frist + second)
+		answer = (first + second)
 	def stop(self):
 		print ("add two numbers is:",answer)
 		pass
