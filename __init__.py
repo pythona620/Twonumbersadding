@@ -8,8 +8,8 @@ LOGGER = getLogger(__name__)
 
 class NumberAddingSkill(MycroftSkill):
 
-	first number = 0
-	second number = 0
+	first_number = 0
+	second_number = 0
 	
 	def get_numerical_response(self, dialog):
 		while True:
@@ -26,11 +26,11 @@ class NumberAddingSkill(MycroftSkill):
 	def handle_start_game_intent(self, message):
 		self.speak_dialog("start.game")
 
-		# get first_no
-		first number = self.get_numerical_response("get.first")
-		# get second_no
-		second number = self.get_numerical_response("get.second")
-		answer = (first number + second number)
+		# get first_numbe
+		first_number = self.get_numerical_response("get.first")
+		# get second_number
+		second_number = self.get_numerical_response("get.second")
+		answer = (first_number + second_number)
 	def stop(self):
 		print ("add two numbers is:",answer)
 		pass
