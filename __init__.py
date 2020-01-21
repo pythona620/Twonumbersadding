@@ -31,7 +31,7 @@ class NumberAddingSkill(MycroftSkill):
 		# get second_number
 		second_number = self.get_numerical_response("get.second")
 		answer = first_number + second_number
-		yip=str['answer']
+		yip=str[answer]
 		self.speak_dialog("add.two.numbers.is",{"answer":yip})
 	def stop(self):		
 		pass
