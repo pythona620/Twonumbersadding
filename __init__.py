@@ -8,14 +8,14 @@ LOGGER = getLogger(__name__)
 
 class NumberAddingSkill(MycroftSkill):
 
-	first_number = 0
+	first_number = 0  
 	second_number = 0
 	
 	def get_numerical_response(self, dialog):
 		while True:
 			val = self.get_response(dialog)
 			try:
-				val = int(val)
+				val = int(val) #check the value int or not
 				return val
 			except ValueError:
 				self.speak_dialog("invalid.input")
